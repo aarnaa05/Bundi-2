@@ -1,88 +1,105 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-/* ─── Shared base ───────────────────────────────────── */
 body {
-    background-color: #ffffff;
-    color: #111;
+    background-color: #f5f5f5;
     font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
 }
 
+/* ─── Main card ─────────────────────────────────────── */
+.card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+    max-width: 560px;
+    width: 100%;
+    padding: 48px 44px;
+}
+
+/* ─── Header ────────────────────────────────────────── */
 .page-label {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     text-transform: uppercase;
     letter-spacing: 5px;
     color: #bbb;
-    margin-bottom: 3rem;
+    margin-bottom: 1.2rem;
 }
 
 h1 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #00AEEF;
-    margin-bottom: 0.4rem;
-}
-
-/* ─── index.html ────────────────────────────────────── */
-.page-content {
-    padding: 60px 20px;
-    max-width: 680px;
-    margin: 0 auto;
+    margin-bottom: 0.3rem;
 }
 
 .subtitle {
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     color: #bbb;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
 }
 
-.card {
-    border: 1px solid #eee;
-    border-left: 3px solid #00AEEF;
-    padding: 25px 30px;
-    margin-bottom: 20px;
+/* ─── Divider ───────────────────────────────────────── */
+.divider {
+    border: none;
+    border-top: 1px solid #f0f0f0;
+    margin-bottom: 2rem;
 }
 
-.card h2 {
-    font-size: 0.7rem;
+/* ─── Content sections ──────────────────────────────── */
+.section {
+    margin-bottom: 2rem;
+}
+
+.section-label {
+    font-size: 0.65rem;
     text-transform: uppercase;
     letter-spacing: 3px;
     color: #bbb;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
 }
 
-.card p {
-    font-size: 0.95rem;
+.section p {
+    font-size: 0.9rem;
     font-weight: 300;
-    line-height: 1.8;
-    color: #333;
+    line-height: 1.9;
+    color: #444;
 }
 
+/* ─── Clue box ──────────────────────────────────────── */
 .clue-box {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 700;
     letter-spacing: 8px;
     color: #00AEEF;
-    border: 1px dashed #e0e0e0;
+    border: 1px dashed #e8e8e8;
+    border-radius: 8px;
     padding: 20px;
-    margin: 20px 0;
+    margin: 16px 0;
     text-align: center;
+    background: #fafeff;
 }
 
+/* ─── Final link (gate-b index) ─────────────────────── */
 .final-link {
     display: block;
     text-decoration: none;
     color: #111;
     border: 1px solid #eee;
-    padding: 20px 40px;
+    border-radius: 8px;
+    padding: 18px 30px;
     text-align: center;
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-top: 30px;
+    margin-top: 2rem;
     transition: all 0.3s ease;
 }
 
@@ -96,16 +113,12 @@ h1 {
 .final-link:hover {
     border-color: #00AEEF;
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 174, 239, 0.05);
+    box-shadow: 0 8px 20px rgba(0, 174, 239, 0.08);
 }
 
 /* ─── final_reveal.html ─────────────────────────────── */
 .reveal-body {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    min-height: 100vh;
 }
 
 #login-box {
@@ -113,7 +126,7 @@ h1 {
 }
 
 #login-box p {
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #bbb;
@@ -123,7 +136,7 @@ h1 {
 input {
     border: none;
     border-bottom: 2px solid #f0f0f0;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
@@ -144,9 +157,10 @@ button {
     background: none;
     color: #111;
     border: 1px solid #eee;
-    padding: 15px 40px;
+    border-radius: 8px;
+    padding: 14px 36px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     cursor: pointer;
@@ -157,7 +171,7 @@ button:hover {
     border-color: #00AEEF;
     color: #00AEEF;
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 174, 239, 0.05);
+    box-shadow: 0 8px 20px rgba(0, 174, 239, 0.08);
 }
 
 #hidden-content {
@@ -166,15 +180,15 @@ button:hover {
 }
 
 #hidden-content .granted {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     text-transform: uppercase;
     letter-spacing: 5px;
     color: #bbb;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
 }
 
 #hidden-content h2 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -191,8 +205,8 @@ button:hover {
 }
 
 .arrow {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: #00AEEF;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     display: block;
 }
