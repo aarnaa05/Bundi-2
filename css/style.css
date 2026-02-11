@@ -1,0 +1,198 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* ─── Shared base ───────────────────────────────────── */
+body {
+    background-color: #ffffff;
+    color: #111;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.page-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #bbb;
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #00AEEF;
+    margin-bottom: 0.4rem;
+}
+
+/* ─── index.html ────────────────────────────────────── */
+.page-content {
+    padding: 60px 20px;
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.subtitle {
+    font-size: 0.75rem;
+    color: #bbb;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.card {
+    border: 1px solid #eee;
+    border-left: 3px solid #00AEEF;
+    padding: 25px 30px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #bbb;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #333;
+}
+
+.clue-box {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 8px;
+    color: #00AEEF;
+    border: 1px dashed #e0e0e0;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.final-link {
+    display: block;
+    text-decoration: none;
+    color: #111;
+    border: 1px solid #eee;
+    padding: 20px 40px;
+    text-align: center;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+}
+
+.final-link span {
+    display: block;
+    font-weight: 700;
+    color: #00AEEF;
+    margin-bottom: 5px;
+}
+
+.final-link:hover {
+    border-color: #00AEEF;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 174, 239, 0.05);
+}
+
+/* ─── final_reveal.html ─────────────────────────────── */
+.reveal-body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-box {
+    text-align: center;
+}
+
+#login-box p {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #bbb;
+    margin-bottom: 2.5rem;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid #f0f0f0;
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #00AEEF;
+    width: 200px;
+    outline: none;
+    background: transparent;
+    letter-spacing: 10px;
+    transition: 0.3s;
+    display: block;
+    margin: 0 auto 2.5rem;
+}
+
+input:focus { border-bottom-color: #00AEEF; }
+
+button {
+    background: none;
+    color: #111;
+    border: 1px solid #eee;
+    padding: 15px 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    border-color: #00AEEF;
+    color: #00AEEF;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 174, 239, 0.05);
+}
+
+#hidden-content {
+    display: none;
+    text-align: center;
+}
+
+#hidden-content .granted {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #bbb;
+    margin-bottom: 1.5rem;
+}
+
+#hidden-content h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #00AEEF;
+    margin-bottom: 1rem;
+}
+
+#hidden-content p {
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: #555;
+    letter-spacing: 1px;
+    line-height: 1.8;
+}
+
+.arrow {
+    font-size: 1.5rem;
+    color: #00AEEF;
+    margin-top: 2rem;
+    display: block;
+}
