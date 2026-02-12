@@ -120,6 +120,22 @@ h1 {
     }
 }
 
+/* ─── Section images ────────────────────────────────── */
+.img-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 1.2rem;
+}
+
+.img-row img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    border-radius: 8px;
+    object-fit: cover;
+    display: block;
+}
+
 /* ─── Final link (gate-b index) ─────────────────────── */
 .final-link {
     display: block;
