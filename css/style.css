@@ -249,3 +249,12 @@ button:hover {
     border-radius: 10px;
     margin-top: 1.5rem;
 }
+
+.video-caption {
+    font-size: 0.72rem;
+    color: #999;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+    margin-top: 1rem;
+    font-style: italic;
+}
