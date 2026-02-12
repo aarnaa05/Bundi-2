@@ -243,3 +243,9 @@ button:hover {
     margin-top: 1.5rem;
     display: block;
 }
+
+.reveal-video {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+}
