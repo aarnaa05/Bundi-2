@@ -75,17 +75,20 @@ h1 {
 
 /* ─── Clue box ──────────────────────────────────────── */
 .clue-box {
-    font-size: 1.6rem;
-    font-weight: 700;
-    letter-spacing: 8px;
-    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     color: #00AEEF;
     border: 1px dashed #e8e8e8;
     border-radius: 8px;
     padding: 20px;
     margin: 16px 0;
-    text-align: center;
     background: #fafeff;
+}
+
+.clue-box span {
+    font-size: 1.6rem;
+    font-weight: 700;
 }
 
 /* ─── Mobile ────────────────────────────────────────── */
@@ -94,9 +97,11 @@ h1 {
         padding: 32px 24px;
     }
     .clue-box {
-        font-size: 1.1rem;
-        letter-spacing: 4px;
+        gap: 14px;
         padding: 16px;
+    }
+    .clue-box span {
+        font-size: 1.2rem;
     }
     input {
         font-size: 1.6rem;
